@@ -6,8 +6,9 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne={
-    title:'Article-One',
+var articles={ 
+'article-one':{
+    title:'Article-One|Divya Goyal',
     heading:'Article-One',
     date:'Sep 23 2016',
     content:`   <p>
@@ -25,7 +26,35 @@ var articleOne={
                   This is the content for my first article.This is the content for my first article.
                   This is the content for my first article.This is the content for my first article.
                 </p> ` 
-    
+},
+ 'article-two':{
+     title:'Article-Two|Divya Goyal',
+    heading:'Article-Two',
+    date:'Sep 23 2016',
+    content:`   <p>
+                  This is the content for my second article.This is the content for my second article.
+                  This is the content for my second article.This is the content for my second article.
+                  This is the content for my second article.This is the content for my second article.</p>
+                  <p>
+                  This is the content for my second article.This is the content for my second article.
+                  This is the content for my second article.This is the content for my second article.
+                  </p>
+                  <p>
+                  This is the content for my second article.This is the content for my second article.
+                  This is the content for my second article.This is the content for my second article.
+                  </p>` 
+ },
+ 'article-three':{
+     title:'Article-Three|Divya Goyal',
+    heading:'Article-Three',
+    date:'Sep 23 2016',
+    content:`   <p>
+                  This is the content for my third article. This is the content for my third article.
+                   This is the content for my third article.</p>
+                   <p>
+                    This is the content for my third article. This is the content for my third article.
+                     This is the content for my third article. This is the content for my third article.</p>` 
+ }
 };
 function createTemplate(data){
     
@@ -72,16 +101,12 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/article-one',function(req,res){
-   res.send(createTemplate(articleOne));
-});
-
-app.get('/article-two',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/:articleName',function(req,res){
+    //articleName=article-one
+    //articles[articleName]={} content of aticle-one
+    
+    var articleName=req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80

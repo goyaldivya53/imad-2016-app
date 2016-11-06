@@ -103,8 +103,31 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/circle.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'circle.css'));
+});
+app.get('/ui/p1.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p1.png'));
+});
+
+app.get('/ui/cover.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cover.png'));
+});
+
+app.get('/ui/s1.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's1.png'));
+});
+
+app.get('/ui/s2.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's2.png'));
+});
+
+app.get('/ui/s3.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's3.png'));
+});
+
+app.get('/ui/s4.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's4.png'));
 });
 
  app.get('/ui/main.js', function (req, res) {

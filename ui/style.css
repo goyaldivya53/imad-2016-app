@@ -54,7 +54,7 @@ ul.topnav li.right {float: right;}
 /*end-of-nav-bar*/
 .header{
 	padding-top:50px;
-	background-image:url(../ui/cover.png);
+	background-image:url(/ui/cover.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 	width:100%;

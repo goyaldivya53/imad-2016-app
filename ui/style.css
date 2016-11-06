@@ -54,7 +54,7 @@ ul.topnav li.right {float: right;}
 /*end-of-nav-bar*/
 .header{
 	padding-top:50px;
-	background-image:url(cover.jpg);
+	background-image:url(/ui/cover.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 	width:100%;
@@ -90,7 +90,7 @@ ul.topnav li.right {float: right;}
 }
 
 .profile-img {	
-	background-image:url(p1.jpg);
+	background-image:url(/ui/p1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 50%;
@@ -211,22 +211,22 @@ overflow:hidden;}
 -moz-transition: opacity .25s ease;}
 
 #box1{
-	background:url("s1.jpg");
+	background:url("/ui/s1.jpg");
 	background-size:cover;
 }
 
 #box2{
-	background:url("s2.jpg");
+	background:url("/ui/s2.jpg");
 	background-size:cover;
 }
 
 #box3{
-	background:url("s3.jpg");
+	background:url("/ui/s3.jpg");
 	background-size:cover;
 }
 
 #box4{
-	background:url("s4.jpg");
+	background:url("/ui/s4.jpg");
 	background-size:cover;
 }
 #box1:hover #overlay , #box2:hover #overlay , #box3:hover  #overlay, #box4:hover #overlay{

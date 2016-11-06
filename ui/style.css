@@ -1,0 +1,238 @@
+body{
+background-color:rgba(212, 202, 201, 0.29);
+color:#FBA100;
+font-family: 'Henny Penny', cursive;
+
+}
+h1,h2,h3,h4{
+	font-family: 'Henny Penny', cursive;
+}
+h2,h3,h4{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+h2{
+	font-size:30px;
+}
+h3{
+	font-size:25px;
+}
+/*navigation-bar*/
+ul.topnav {
+	  position: sticky;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6C648B;
+
+}
+
+ul.topnav li {float:right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #6BBAA7;}
+
+ul.topnav li a.active {background-color: #FBA100;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+/*end-of-nav-bar*/
+.header{
+	padding-top:50px;
+	background-image:url(cover.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:30em;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+	margin-top:0;
+	color:#FBA100;
+}
+.container{
+	padding-top:20px;
+	display:block;
+	margin:auto;
+	
+}
+
+.slide-up{
+	animation: slide-in 2s;
+}
+@keyframes slide-in {
+    from {
+        
+         margin-left: 100%;
+			width: 300%; 
+    }
+    to {
+        
+        margin-left: 0%;
+    width: 100%;
+    }
+}
+
+.profile-img {	
+	background-image:url(p1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+	animation:slide-down 2s;
+}
+
+.header h1{
+	 	font-size:40px;
+		margin-bottom:0;
+}
+.header p{
+	margin-top:0;
+	
+	font-size:35px;
+}
+
+
+/*content*/
+.main-contents{
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+	
+}
+.each-content{
+		display:block;
+	margin:auto;
+}
+.content-title , .contact-section h3{
+	text-align: center;
+  margin-bottom: 2em;
+	
+}
+
+.content-desc{
+	color:#6BBAA7;
+	font-family: 'Julee', cursive;
+	font-size:20px;
+}
+/*contact-section*/
+.contact-section {
+  padding: 4em 0;
+ 
+ }
+
+.contact-details form input[type="text"],.contact-details form textarea ,.contact-details form input[type="email"],.contact-details form input[type="tel"]{
+	width: 100%;
+	padding: 1.5em 1em;
+	border: 1px solid #6C648B;
+	font-size:  12px;
+	margin-bottom: 1.2em;
+	color: #6C648B;
+	outline: none;
+	background:transparent;
+	font-weight: 600;
+}
+.contact-details form textarea {
+	height: 200px;
+	resize: none;
+	width: 100%;
+}
+.contact-right{
+	text-align:right;
+}
+.contact-details input[type="submit"] {
+	background: #6C648B;
+	padding: 1em 2em;
+	border: none;
+	font-size: 1em;
+	margin: 0.5em 0 0 0;
+	color: #fff;
+	outline: none;
+	font-weight: 600;
+	border-radius:5px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.contact-details input[type="submit"]:hover {
+  color: #6C648B;
+  background: #6BBAA7;
+}
+
+/*IT-SKILLS*/
+
+#myskills  tr>td{
+	padding:20px;
+}
+
+
+
+
+
+
+/*strengths-image-hover*/
+
+.strength  {  width:250px;
+           height:150px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          
+  
+border-radius:5px;
+overflow:hidden;}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               padding:45px 0 110px 0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+#box1{
+	background:url("s1.jpg");
+	background-size:cover;
+}
+
+#box2{
+	background:url("s2.jpg");
+	background-size:cover;
+}
+
+#box3{
+	background:url("s3.jpg");
+	background-size:cover;
+}
+
+#box4{
+	background:url("s4.jpg");
+	background-size:cover;
+}
+#box1:hover #overlay , #box2:hover #overlay , #box3:hover  #overlay, #box4:hover #overlay{
+               opacity:1;}
+
+#plus       {  
+               font-weight:120;
+               color:rgba(255,255,255,.85);
+               font-size:30px;}

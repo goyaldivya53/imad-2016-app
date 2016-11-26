@@ -134,6 +134,10 @@ app.get('/ui/s4.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+ app.get('/ui/stars.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'stars.js'));
+});
+
 app.get('/:articleName',function(req,res){
     //articleName=article-one
     //articles[articleName]={} content of aticle-one
